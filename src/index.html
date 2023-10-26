@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/dist/style.css" rel="stylesheet" />
+        <title>Componentes</title>
+    </head>
+    <body class="bg-gray-50">
+        <div class="space-y-1 w-1/4">
+            <div class="p-4 border-b">
+                <h6 class="font-bold mb-2">Componente Card</h6>
+                <div
+                    class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden max-w-sm"
+                >
+                    <div
+                        class="w-full px-4 py-2 bg-gray-100 border-b border-gray-200"
+                    >
+                        <h4 class="font-semibold">Título do card</h4>
+                    </div>
+                    <div class="px-4 py-2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit porro ad tempora eos repudiandae, quidem
+                        aperiam possimus nihil voluptates qui velit illum sequi.
+                        Eum, sint error. Quas magnam placeat vel.
+                    </div>
+                    <div
+                        class="w-full px-4 py-2 bg-gray-50 border-t border-gray-200"
+                    >
+                        Rodapé do card
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-b">
+                <h6 class="font-bold mb-2">Componente Button</h6>
+                <div class="space-x-2">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 px-2 py-1 rounded text-white text-sm shadow"
+                    >
+                        Salvar
+                    </button>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 px-3 py-1.5 rounded text-white text-base shadow"
+                    >
+                        Salvar
+                    </button>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white text-lg shadow"
+                    >
+                        Salvar
+                    </button>
+                </div>
+            </div>
+            <div class="p-4 border-b">
+                <h6 class="font-bold mb-2">Componente Badge/Tag</h6>
+                <div class="space-y-2">
+                    <div>
+                        <div
+                            class="inline-flex items-center text-sm text-green-800 font-medium bg-green-200 px-2 py-1 rounded-md"
+                        >
+                            Ativo
+                        </div>
+                        <div
+                            class="inline-flex items-center text-sm text-green-800 font-medium bg-green-200 px-2 py-1 rounded-full"
+                        >
+                            Ativo
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="inline-flex items-center text-sm text-red-800 font-medium bg-red-200 px-2 py-1 rounded-md"
+                        >
+                            Inativo
+                        </div>
+                        <div
+                            class="inline-flex items-center text-sm text-red-800 font-medium bg-red-200 px-2 py-1 rounded-full"
+                        >
+                            Inativo
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="inline-flex items-center text-sm text-yellow-800 font-medium bg-yellow-200 px-2 py-1 rounded-md"
+                        >
+                            Em progresso
+                        </div>
+                        <div
+                            class="inline-flex items-center text-sm text-yellow-800 font-medium bg-yellow-200 px-2 py-1 rounded-full"
+                        >
+                            Em progresso
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-b">
+                <h6 class="font-bold mb-2">Componente Input</h6>
+                <div class="space-y-2">
+                    <input
+                        type="text"
+                        class="bg-gray-50 border border-gray-300 rounded px-2 py-1 text-sm text-gray-500 placeholder-gray-300 focus:outline-none focus:border-blue-500 w-full"
+                        placeholder="Digite seu nome"
+                    />
+                    <input
+                        type="text"
+                        class="bg-gray-50 border border-gray-300 rounded px-2.5 py-1.5 text-base text-gray-500 placeholder-gray-300 focus:outline-none focus:border-blue-500 w-full"
+                        placeholder="Digite seu nome"
+                    />
+                    <input
+                        type="text"
+                        class="bg-gray-50 border border-gray-300 rounded px-3 py-2.5 text-lg text-gray-500 placeholder-gray-300 focus:outline-none focus:border-blue-500 w-full"
+                        placeholder="Digite seu nome"
+                    />
+                    <input
+                        type="text"
+                        class="bg-gray-50 border border-gray-300 rounded px-3 py-2.5 text-lg text-gray-500 placeholder-gray-300 focus:outline-none focus:border-blue-500 w-full focus:ring-2 focus:ring-blue-500 focus:ring-opacity-20"
+                        placeholder="Digite seu nome - Input com ring"
+                    />
+                    <input
+                        type="text"
+                        class="bg-gray-50 border border-gray-300 rounded px-3 py-2.5 text-lg text-gray-500 placeholder-gray-300 focus:outline-none focus:border-blue-500 w-full focus:ring-2 focus:ring-blue-500 focus:ring-opacity-20 transition-all duration-500"
+                        placeholder="Digite seu nome - Input com transition"
+                    />
+                </div>
+            </div>
+            <div class="p-4 border-b">
+                <h6 class="font-bold mb-2">Componente Dropdown</h6>
+                <div>
+                    <button
+                        class="flex items-center w-full bg-gray-50 hover:border-gray-200 border border-gray-300 rounded-t-md px-2.5 py-1 text-sm text-gray-400 hover:text-gray-500 shadow"
+                        onclick="dropdown()"
+                    >
+                        <span class="mr-auto text-base font-medium">
+                            + Mais
+                        </span>
+                        <svg
+                            class="w-6 ml-auto"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div
+                        id="lista-dropdown"
+                        class="bg-white border border-gray-300 py-1 shadow-md rounded-b-md invisible"
+                    >
+                        <a
+                            class="border-b border-gray-300 block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                            href="#"
+                            >Link 1</a
+                        >
+                        <a
+                            class="border-b border-gray-300 block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                            href="#"
+                            >Link 2</a
+                        >
+                        <a
+                            class="border-b border-gray-300 block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                            href="#"
+                            >Link 3</a
+                        >
+                        <a
+                            class="border-b border-gray-300 block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                            href="#"
+                            >Link 4</a
+                        >
+                        <a
+                            class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                            href="#"
+                            >Link 5</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const LISTA = document.querySelector("#lista-dropdown");
+        let statusLista = 0;
+
+        function dropdown() {
+            if (statusLista == 0) {
+                LISTA.classList.remove("invisible");
+                LISTA.classList.add("visible");
+                statusLista++;
+            } else {
+                LISTA.classList.remove("visible");
+                LISTA.classList.add("invisible");
+                statusLista--;
+            }
+        }
+    </script>
+</html>
